@@ -1,0 +1,17 @@
+<div class="container">
+	<form action = "/result">
+		<input name="mobile"
+		type="tel"
+		class="search_field"
+		placeholder="Phone number" />
+
+		<input type="submit"
+		value="SEARCH"
+		class="search_btn" />
+	</form>
+</div>
+<div>
+	<% @users.each do |u| %>
+		<p><% u.name %></p>
+	<% end %>
+</div>

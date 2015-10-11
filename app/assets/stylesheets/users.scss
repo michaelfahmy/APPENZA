@@ -1,0 +1,40 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+		padding: 10px 10px;
+		border: 1px solid #EF5350;
+		border-radius: 4px;
+    position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -180px;
+		margin-top: -250px;
+}
+
+.search_field {
+	border-style: none;
+	outline-width: 0;
+}
+
+.search_btn {
+    padding: 5px 7px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: #EF5350;
+    color: #FFFFFF;
+}
+
+.name {
+	color: #EF5350;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.mobile, .email {
+	color: #E53935;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 500;
+}
