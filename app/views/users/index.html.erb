@@ -1,0 +1,18 @@
+<div class = "container" ng-controller="jsController">
+	<div class="form-container">
+			<input name="mobile"
+						ng-model="query"
+						type="tel"
+						class="search_field"
+						placeholder="Phone number" />
+	</div>
+
+	<div ng-repeat="user in users | filter: query">
+		<div>
+			<p>{{user.name}}
+			<br>{{user.mobile}}
+			</p>
+		</div>
+	</div>
+
+</div>

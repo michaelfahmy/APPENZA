@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 
-  def show
-  	@user = User.find_by(mobile: params[:mobile])
-  end
+  def index
+  	@users = User.all
+  	respond_to do |k|
+  		k.html
+  		k.json { render json: @users }
+  	end
 
+  end
 end
